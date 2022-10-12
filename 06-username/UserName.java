@@ -12,7 +12,7 @@ public class UserName {
     String lastName = s.nextLine();
 
     // test output
-    System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
+    System.out.println("Hello the game you have been assigned is called market root" + initialize(firstName) + "." + initialize(lastName) + ".");
 
     s.close();
   } // end main method
