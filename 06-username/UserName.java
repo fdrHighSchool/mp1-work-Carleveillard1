@@ -10,9 +10,23 @@ public class UserName {
     String firstName = s.nextLine();
     System.out.print("Enter your last name: ");
     String lastName = s.nextLine();
-
+    System.out.print("Whats your favorite number: ");
+    String Number = s.nextLine();
+    System.out.print("Are you a teacher or a student");
+    String Lable = s.nextLine();
+    if(Lable .equals("teacher")) {
+        System.out.println(firstName.substring(0, 1) + lastName + Number + "schools.nyc.gov");
+        
+    }
+    if(Lable .equals("student")) {
+        System.out.println(firstName + lastName.substring(0, 1) + Number + "@nycstudents.net");
+        
+    }
+    
+    
     // test output
-    System.out.println("Hello the game you have been assigned is called market root" + initialize(firstName) + "." + initialize(lastName) + ".");
+    //System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
+    
 
     s.close();
   } // end main method
