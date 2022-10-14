@@ -15,7 +15,7 @@ public class UserName {
     System.out.print("Are you a teacher or a student: ");
     String Lable = s.nextLine();
     if(Lable .equals("teacher")) {
-        System.out.println(firstName.substring(0, 1) + lastName + Number + "schools.nyc.gov");
+        System.out.println(firstName.substring(0, 1) + lastName + Number + "@schools.nyc.gov");
         
     }
     if(Lable .equals("student")) {
