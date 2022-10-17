@@ -1,9 +1,16 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class UserName {
   public static void main(String[] args) {
     // create Scanner object
     Scanner s = new Scanner(System.in);
+    Random rand = new Random();
+    
+    int rand_int1 =rand.nextInt(10);
+    int rand_int2 =rand.nextInt(10);
+    int rand_int3 =rand.nextInt(10);
+    int rand_int4 =rand.nextInt(10);
 
     // get String input from user
     System.out.print("Enter your first name: ");
@@ -22,7 +29,7 @@ public class UserName {
         System.out.println(firstName + lastName.substring(0, 1) + Number + "@nycstudents.net");
         
     }
-    
+    System.out.print("Your password is " + rand_int1 + rand_int2 + rand_int3 + rand_int4);
     
     // test output
     //System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
