@@ -27,6 +27,8 @@ public class UserName {
     String Number = s.nextLine();
     System.out.print("Are you a teacher or a student: ");
     String Lable = s.nextLine();
+    
+    
     if(Lable .equals("teacher")) {
         System.out.println(firstName.substring(0, 1) + lastName + Number + "@schools.nyc.gov");
         
@@ -36,34 +38,42 @@ public class UserName {
         
     }
     //System.out.print("Your password is " + rand_int1 + rand_int2 + rand_int3 + rand_int4);{
-    genartePassword(8);
+    generatePassword(3,firstName);
     s.close();
     }  
-    public static String genartePassword(int length) {
-    String password = "";
-    
-    
-    
+ 
+    public static String generatePassword(int length,String firstName) {
+        String password = "";
         
-    int rand = (char)(int)(Math.random()*(90-65+1) + 65);
-    char c = (char)rand;
-    System.out.print(rand + " " + c);
-        
-        
-        
-    return password;    
-    }
-        
-        // test output
-    //System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
-   /*
-   * Name: initialize
-   * Purpose: send back the first character (inital) of a name
-   * Input: a name (String)
-   * Return: a single character (String)
-   */
-    public static String initialize(String n) {
-    return n.substring(0, 1);
-    } // end initialize method
+        for(int i = 0; i < length; i++) {
+            int rand = (char)(int)(Math.random()*(90-65+1) + 65);
+            
+            
+            String fullName = firstName + " " + rand;
+            
+            char c = (char)rand;
+            System.out.print(rand + " " + c);
+            
+            
+        }
 
-} // end class
+        
+            
+            
+        return password; 
+        
+        }
+            
+            // test output
+        //System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
+       /*
+       * Name: initialize
+       * Purpose: send back the first character (inital) of a name
+       * Input: a name (String)
+       * Return: a single character (String)
+       */
+        public static String initialize(String n) {
+        return n.substring(0, 1);
+        } // end initialize method
+    
+    } // end class
