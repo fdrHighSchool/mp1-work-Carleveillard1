@@ -37,23 +37,24 @@ public class UserName {
         System.out.println(firstName + lastName.substring(0, 1) + Number + "@nycstudents.net");
         
     }
-    //System.out.print("Your password is " + rand_int1 + rand_int2 + rand_int3 + rand_int4);{
-    generatePassword(3,firstName);
+    //System.out.print("Your password is " + firstName + lastName + Number);{
+    System.out.print("How long do you want your password to be: ");
+    int User = s.nextInt();
+    System.out.println(generatePassword(User,firstName));
     s.close();
     }  
  
     public static String generatePassword(int length,String firstName) {
-        String password = "";
+        String password = firstName;
         
         for(int i = 0; i < length; i++) {
-            int rand = (char)(int)(Math.random()*(90-65+1) + 65);
+            int rand = (char)(int)(Math.random()*(90-48+1) + 48);
             
             
-            String fullName = firstName + " " + rand;
-            
+            String fullName = firstName + " " + rand;            
             char c = (char)rand;
-            System.out.print(rand + " " + c);
-            
+            //System.out.print(firstName + rand + c);
+            password += c;
             
         }
 
